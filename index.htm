@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobrodošli v fitnesu</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+            color: #fff;
+            height: 100%; /* Make sure the body takes the full height */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        
+        body
+        {
+        background-image: url('Images/image.jpg'); /* Pot do tvoje slike */
+            background-size: cover; /* Slika bo pokrila celoten zaslon */
+            background-position: center; /* Slika bo poravnana na sredini */
+            background-attachment: fixed; 
+        }
+
+        /* Uvodni del */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* Make sure padding doesn't cause overflow */
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin: 20px 0;
+        }
+
+        /* Gumbi za prijavo in registracijo v vrstici */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Razmik med gumbi */
+            margin-top: 30px;
+            width: 100%; /* Zagotovi, da gumbi zavzamejo širino razpoložljivega prostora */
+            max-width: 500px; /* Največja širina gumbov */
+        }
+
+        /* Gumb za registracijo */
+        .cta-button {
+            width: 200px; /* Nastavimo širino gumbov */
+            font-size: 1.2rem;
+            padding: 12px 0; /* Nastavimo zgornji in spodnji rob za krajše gumbe */
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Gumb za registracijo */
+        .cta-button.register {
+            background: #fff;
+            color: #003cbc;
+        }
+
+        .cta-button.register:hover {
+            background: #001885;
+            color: #fff;
+        }
+
+        /* Gumb za prijavo */
+        .cta-button.login {
+            background: #001885;
+            color: #fff;
+        }
+
+        .cta-button.login:hover {
+            background: #ffffff;
+            color: #001885;
+        }
+
+        /* Odzivnost na mobilnih napravah */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 12px 0;
+                width: 160px; /* Manjša širina gumbov na mobilnih napravah */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Uvodni del -->
+    <div class="hero">
+         <h1>Telifnis</h1>
+        <p>Izvrstne fitnes vadbe za vse!</p>
+        <div class="button-container">
+            <a href="StranRegister.htm" class="cta-button register">Registracija</a>
+            <a href="StranLogin.htm" class="cta-button login">Prijava</a>
+        </div>
+    </div>
+
+</body>
+</html>
